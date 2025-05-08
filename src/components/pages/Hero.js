@@ -1,6 +1,7 @@
 import Stack from "@/components/reactbits/Stack";
 import React from "react";
 import { MdArrowForwardIos } from "react-icons/md";
+import { content } from "@/data/content";
 
 const images = [
   {
@@ -25,11 +26,9 @@ const Hero = () => {
   return (
     <main id="hero" className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-12 py-28 md:py-44 h-max">
       <div className="space-y-6">
-        <h2>Say Hello 👋</h2>
+        <h2>{content.find((item) => item.page === "hero").title}👋</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec qu
+          {content.find((item) => item.page === "hero").description}
         </p>
         <button className="border border-zinc-400 px-8 py-3 rounded-xl cursor-pointer flex items-center gap-4">Read More <MdArrowForwardIos/></button>
       </div>

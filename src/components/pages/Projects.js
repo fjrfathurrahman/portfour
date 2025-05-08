@@ -1,11 +1,13 @@
 'use client'
 
+import { content } from "@/data/content";
+
 const Projects = () => {
   return (
-    <main id="projects" className="py-12 h-screen">
+    <main id="projects" className=" py-12 h-screen">
       <div className="md:text-center text-start">
-        <h3>Projects Us 🤸‍♂️</h3>
-        <p>Lenatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
+        <h3>{content.find((item) => item.page === 'projects').title} 🤸‍♂️</h3>
+        <p>{content.find((item) => item.page === 'projects').content}</p>
       </div>
 
       <div className="h-[80vh] flex flex-col gap-12 items-center justify-center text-center">

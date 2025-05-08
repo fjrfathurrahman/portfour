@@ -3,19 +3,19 @@ import React from "react";
 import { FaHtml5 } from "react-icons/fa";
 import { BadgeSkill } from "../fragments/Badge";
 import { Skills } from "@/data/resources";
+import { content } from "@/data/content";
 
 const About = () => {
   return (
     <main id="about" className="py-12 h-screen">
       <div className="my-12">
-        <h3>About Us 🦍</h3>
+        <h3>{content.find((item) => item.page === 'about').title} 🦍</h3>
         <p>
-          Lenatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Donec qu
+          {content.find((item) => item.page === 'about').intro}
         </p>
       </div>
 
-      <div className="items-center grid grid-cols-2">
+      <div className="items-center grid md:grid-cols-2">
         <Image
           src="https://i.pinimg.com/736x/44/c6/0d/44c60d734754e298a207972f27c76aed.jpg"
           alt="image"
@@ -25,12 +25,9 @@ const About = () => {
         />
 
         <div>
-          <h3>Me.</h3>
+          <h3>Who We Are</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec qu
+            {content.find((item) => item.page === 'about').description}
           </p>
         </div>
       </div>
