@@ -2,7 +2,7 @@
 
 const Projects = () => {
   return (
-    <main id="projects" className="py-12">
+    <main id="projects" className="py-12 h-screen">
       <div className="md:text-center text-start">
         <h3>Projects Us 🤸‍♂️</h3>
         <p>Lenatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>

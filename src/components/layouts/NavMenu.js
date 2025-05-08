@@ -56,7 +56,7 @@ function DockItem({
       onFocus={() => isHovered.set(1)}
       onBlur={() => isHovered.set(0)}
       onClick={onClick}
-      className={`relative inline-flex items-center justify-center rounded-full bg-zinc-800 border-neutral-700 border-2 shadow-md ${className} cursor-pointer`}
+      className={`relative inline-flex items-center justify-center rounded-full border-zinc-800 border-2 shadow-md ${className} cursor-pointer`}
       tabIndex={0}
       role="button"
       aria-haspopup="true"
@@ -100,7 +100,7 @@ function DockLabel({ children, className = "", ...rest }) {
 
 function DockIcon({ children, className = "" }) {
   return (
-    <div className={`flex items-center justify-center ${className} text-white`} aria-label='icon'>
+    <div className={`flex items-center justify-center ${className} text-zinc-800`} aria-label='icon'>
       {children}
     </div>
   );
@@ -140,7 +140,7 @@ export default function NavMenu({
           isHovered.set(0);
           mouseX.set(Infinity);
         }}
-        className={`${className} absolute bottom-2 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-3xl pb-2 px-4 bg-white/5 backdrop-blur-xl `}
+        className={`${className} absolute bottom-2 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-3xl pb-2 px-4 bg-white/5 backdrop-blur-xl shadow-2xl`}
         style={{ height: panelHeight }}
         role="toolbar"
         aria-label="Application dock"
