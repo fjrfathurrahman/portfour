@@ -1,5 +1,6 @@
 import Stack from "@/components/reactbits/Stack";
 import React from "react";
+import { MdArrowForwardIos } from "react-icons/md";
 
 const images = [
   {
@@ -22,7 +23,7 @@ const images = [
 
 const Hero = () => {
   return (
-    <main className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-12 py-28 md:py-44 h-max">
+    <main id="hero" className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-12 py-28 md:py-44 h-max">
       <div className="space-y-6">
         <h2>Say Hello 👋</h2>
         <p>
@@ -30,7 +31,7 @@ const Hero = () => {
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus mus. Donec qu
         </p>
-        <button className="border border-zinc-400 px-12 py-3 rounded-xl cursor-pointer">Read More</button>
+        <button className="border border-zinc-400 px-8 py-3 rounded-xl cursor-pointer flex items-center gap-4">Read More <MdArrowForwardIos/></button>
       </div>
       <div className="flex justify-center xl:hidden">
         <Stack randomRotation={true} sensitivity={180} sendToBackOnClick={false} cardDimensions={{ width: 230, height: 230 }} cardsData={images}/>
