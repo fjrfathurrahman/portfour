@@ -140,7 +140,7 @@ export default function NavMenu({
           isHovered.set(0);
           mouseX.set(Infinity);
         }}
-        className={`${className} absolute bottom-2 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-3xl pb-2 px-4 bg-white/5 backdrop-blur-xl shadow-2xl`}
+        className={`${className} absolute bottom-2 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-3xl pb-2 px-4 bg-white/5 backdrop-blur shadow-2xl`}
         style={{ height: panelHeight }}
         role="toolbar"
         aria-label="Application dock"

@@ -29,7 +29,7 @@
 @layer base {
   * { @apply border-zinc-300 scroll-smooth }
 
-  body { @apply bg-zinc-100 text-zinc-800 font-sans }
+  body { @apply bg-zinc-50 text-zinc-800 font-sans }
 
   h1 { @apply text-6xl sm:text-7xl font-bold tracking-wider leading-tight }
 

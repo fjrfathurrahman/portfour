@@ -1,6 +1,6 @@
 'use client'
 
-import { content } from "@/data/content";
+import { content } from "@/data/resources";
 
 const Projects = () => {
   return (

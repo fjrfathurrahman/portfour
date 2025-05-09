@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import { FaHtml5 } from "react-icons/fa";
 import { BadgeSkill } from "../fragments/Badge";
-import { Skills } from "@/data/resources";
-import { content } from "@/data/content";
+import { content, Skills } from "@/data/resources";
 
 const About = () => {
   return (

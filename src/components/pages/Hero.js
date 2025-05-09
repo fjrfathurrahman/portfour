@@ -1,7 +1,6 @@
 import Stack from "@/components/reactbits/Stack";
 import { MdArrowForwardIos } from "react-icons/md";
-import { content } from "@/data/content";
-import { ImagesHero } from "@/data/resources";
+import { content, ImagesHero } from "@/data/resources";
 
 const Hero = () => {
   return (
